@@ -1,0 +1,42 @@
+.toolbar-menu{
+  position: fixed;
+  font: 1rem;
+  top: 0;
+  height: 64px;
+  z-index: 1000;
+}
+.content-menu{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.space-rigth-icon{
+  margin-right: 10px;
+
+}
+
+.logo{
+  width: 10px;
+
+    .mat-icon{
+      padding-right: 20px;
+      margin-right: -13px;
+    }
+
+}
+
+.teste{
+  display: flex;
+  align-items: baseline;
+  margin-top: 8px;
+  width: 100vh;
+}
+
+.divider{
+  width: 100%;
+}
+
+.title{
+  font-size: 20px;
+}

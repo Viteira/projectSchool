@@ -1,0 +1,21 @@
+.icon-space{
+  margin-right: 10px;
+  color: #22ff86d2;
+}
+
+.icon-space-mat{
+  font-size: 20px;
+  margin:  5px 5px 0 0;
+}
+
+mat-toolbar{
+  margin: -10px -4px 5px -20px;
+  width: calc(100% + 40px);
+  background-color: rgb(50, 50, 50);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.125);
+  height: 45px;
+  padding: 10px 10px 18px;
+  padding-left: 25px;
+}
