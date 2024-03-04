@@ -9,11 +9,12 @@ import { Course } from "../shared/models/course";
 })
 
 export class CoursesService{
-  baseUrl = `${environment.apiUrl} + courses`;
+  baseUrl = `${environment.apiUrl}courses`;
   private http = inject(HttpClient);
 
   public getCourses(): Observable<Course[]>{
-    return this.http.get<Course[]>(`${this.baseUrl}`)
+    console.log(this.baseUrl);
+    return this.http.get<Course[]>(this.baseUrl)
   }
 
   public getCoursesById(id: number): Observable<Course[]>{
