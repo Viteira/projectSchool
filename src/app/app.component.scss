@@ -27,6 +27,7 @@ mat-toolbar-row{
 
   &-title{
     padding: 25px 30px;
+    text-transform: capitalize;
   }
   &-top{
     height: 40px;
@@ -94,11 +95,9 @@ mat-nav-list{
     font-size: 1.1rem;
     color: #22ff86d2;
   }
-
   mat-divider{
     margin-top: 336px;
   }
-
   .justify{
     margin-right: 10px;
     display: flex;
