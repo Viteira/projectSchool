@@ -7,7 +7,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Lucas Oliveira",
-      "description": "Aprenda React de forma avançada. (Tecnologia)"
+      "description": "Aprenda React de forma avançada."
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "rating": 4.9,
       "year": 2023,
       "professor": "Ana Beatriz Silva",
-      "description": "Domine ML e IA. (Tecnologia)"
+      "description": "Domine ML e IA."
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "rating": 4.3,
       "year": 2020,
       "professor": "Gustavo Santos",
-      "description": "Exploração artística moderna. (Arte)"
+      "description": "Exploração artística moderna."
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "rating": 4.8,
       "year": 2021,
       "professor": "Mariana Costa",
-      "description": "Técnicas avançadas na culinária. (Culinária)"
+      "description": "Técnicas avançadas na culinária."
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Rafael Fernandes",
-      "description": "Investimentos sólidos. (Finanças)"
+      "description": "Investimentos sólidos."
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "rating": 4.6,
       "year": 2021,
       "professor": "Camila Silva",
-      "description": "Abordagens modernas em psicologia. (Psicologia)"
+      "description": "Abordagens modernas em psicologia."
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "rating": 4.5,
       "year": 2020,
       "professor": "Fábio Augusto",
-      "description": "Estratégias eficazes de marketing. (Marketing)"
+      "description": "Estratégias eficazes de marketing."
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "rating": 4.4,
       "year": 2019,
       "professor": "Luciana Oliveira",
-      "description": "Captura da beleza da natureza. (Fotografia)"
+      "description": "Captura da beleza da natureza."
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "rating": 4.5,
       "year": 2022,
       "professor": "Leonardo Barbosa",
-      "description": "Histórias e poesias inspiradoras. (Escrita)"
+      "description": "Histórias e poesias inspiradoras."
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "rating": 4.9,
       "year": 2023,
       "professor": "Patrícia Costa",
-      "description": "Crie músicas excepcionais. (Música)"
+      "description": "Crie músicas excepcionais."
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "rating": 4.2,
       "year": 2019,
       "professor": "Paulo Mendes",
-      "description": "Proteja nosso planeta. (Ciências Ambientais)"
+      "description": "Proteja nosso planeta."
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "rating": 4.6,
       "year": 2021,
       "professor": "Bianca Fernandes",
-      "description": "Moda e estilo sustentáveis. (Moda)"
+      "description": "Moda e estilo sustentáveis."
     },
     {
       "id": 13,
@@ -115,7 +115,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Carolina Santos",
-      "description": "Habilidades de comunicação no trabalho. (Comunicação)"
+      "description": "Habilidades de comunicação no trabalho."
     },
     {
       "id": 14,
@@ -124,7 +124,7 @@
       "rating": 4.3,
       "year": 2020,
       "professor": "Pedro Almeida",
-      "description": "Debate político moderno. (Filosofia)"
+      "description": "Debate político moderno."
     },
     {
       "id": 15,
@@ -133,16 +133,16 @@
       "rating": 4.8,
       "year": 2021,
       "professor": "Luiz Oliveira",
-      "description": "Bem-estar mental e físico. (Saúde)"
+      "description": "Bem-estar mental e físico."
     },
     {
       "id": 16,
-      "name": "Desenvolvimento Avançado de Aplicativos Web com Vue.js",
+      "name": "Desenvolvimento de Aplicativos Web com Vue.js",
       "category": "Tecnologia",
       "rating": 4.6,
       "year": 2023,
       "professor": "Isabella Santos",
-      "description": "Explore o desenvolvimento avançado de aplicativos web usando Vue.js. (Tecnologia)"
+      "description": "Explore o desenvolvimento avançado de aplicativos web usando Vue.js."
     },
     {
       "id": 17,
@@ -151,7 +151,7 @@
       "rating": 4.8,
       "year": 2023,
       "professor": "David Garcia",
-      "description": "Domine os fundamentos da cibersegurança. (Tecnologia)"
+      "description": "Domine os fundamentos da cibersegurança."
     },
     {
       "id": 19,
@@ -160,7 +160,7 @@
       "rating": 4.5,
       "year": 2023,
       "professor": "André Costa",
-      "description": "Explore técnicas modernas de escultura e arte. (Arte)"
+      "description": "Explore técnicas modernas de escultura e arte."
     },
     {
       "id": 18,
@@ -169,7 +169,7 @@
       "rating": 4.5,
       "year": 2022,
       "professor": "Sofia Rodriguez",
-      "description": "Aprofunde-se nas técnicas e tendências da arte abstrata moderna. (Arte)"
+      "description": "Aprofunde-se nas técnicas e tendências da arte abstrata moderna."
     },
     {
       "id": 20,
@@ -178,7 +178,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Javier Martinez",
-      "description": "Fusão de sabores e técnicas culinárias internacionais. (Culinária)"
+      "description": "Fusão de sabores e técnicas culinárias internacionais."
     },
     {
       "id": 21,
@@ -187,7 +187,7 @@
       "rating": 4.6,
       "year": 2023,
       "professor": "Maria Hernandez",
-      "description": "Aprenda estratégias eficazes de investimento em imóveis. (Finanças)"
+      "description": "Aprenda estratégias eficazes de investimento em imóveis."
     },
     {
       "id": 22,
@@ -196,7 +196,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Sofia Garcia",
-      "description": "Explore a ciência do bem-estar e da psicologia positiva. (Psicologia)"
+      "description": "Explore a ciência do bem-estar e da psicologia positiva."
     },
     {
       "id": 23,
@@ -205,7 +205,7 @@
       "rating": 4.8,
       "year": 2023,
       "professor": "Laura Martins",
-      "description": "Aproveite o poder do marketing de influência na era digital. (Marketing)"
+      "description": "Aproveite o poder do marketing de influência na era digital."
     },
     {
       "id": 24,
@@ -214,7 +214,7 @@
       "rating": 4.5,
       "year": 2022,
       "professor": "Daniel Lopez",
-      "description": "Domine técnicas avançadas na fotografia de paisagens. (Fotografia)"
+      "description": "Domine técnicas avançadas na fotografia de paisagens."
     },
     {
       "id": 25,
@@ -223,7 +223,7 @@
       "rating": 4.6,
       "year": 2023,
       "professor": "Isabel Rodrigues",
-      "description": "Crie histórias curtas e poesia inspiradora. (Escrita)"
+      "description": "Crie histórias curtas e poesia inspiradora."
     },
     {
       "id": 26,
@@ -232,7 +232,7 @@
       "rating": 4.9,
       "year": 2023,
       "professor": "Antonio Silva",
-      "description": "Componha peças musicais excepcionais. (Música)"
+      "description": "Componha peças musicais excepcionais."
     },
     {
       "id": 27,
@@ -241,7 +241,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Luisa Mendes",
-      "description": "Estratégias para conservar a biodiversidade. (Ciências Ambientais)"
+      "description": "Estratégias para conservar a biodiversidade."
     },
     {
       "id": 28,
@@ -250,7 +250,7 @@
       "rating": 4.8,
       "year": 2023,
       "professor": "Carlos Fernandes",
-      "description": "Projete moda sustentável e estilosa. (Moda)"
+      "description": "Projete moda sustentável e estilosa."
     },
     {
       "id": 29,
@@ -259,7 +259,7 @@
       "rating": 4.6,
       "year": 2022,
       "professor": "Isabel Oliveira",
-      "description": "Aprimore as habilidades de comunicação no ambiente de trabalho. (Comunicação)"
+      "description": "Aprimore as habilidades de comunicação no ambiente de trabalho."
     },
     {
       "id": 30,
@@ -268,7 +268,7 @@
       "rating": 4.5,
       "year": 2023,
       "professor": "Ricardo Alves",
-      "description": "Exploração da filosofia política contemporânea. (Filosofia)"
+      "description": "Exploração da filosofia política contemporânea."
     },
     {
       "id": 31,
@@ -277,7 +277,7 @@
       "rating": 4.9,
       "year": 2022,
       "professor": "Mariana Silva",
-      "description": "Achieve mindfulness and manage stress effectively. (Saúde)"
+      "description": "Achieve mindfulness and manage stress effectively."
     },
     {
       "id": 31,
@@ -286,16 +286,16 @@
       "rating": 4.9,
       "year": 2022,
       "professor": "Mariana Silva",
-      "description": "Alcance mindfulness e gerencie o estresse eficazmente. (Saúde)"
+      "description": "Alcance mindfulness e gerencie o estresse eficazmente."
     },
     {
       "id": 32,
-      "name": "Desenvolvimento Avançado de Aplicativos Móveis com Flutter",
+      "name": "Desenvolvimento de Aplicativos Móveis com Flutter",
       "category": "Tecnologia",
       "rating": 4.8,
       "year": 2023,
       "professor": "Pedro Oliveira",
-      "description": "Domine o desenvolvimento avançado de aplicativos móveis com Flutter. (Tecnologia)"
+      "description": "Domine o desenvolvimento avançado de aplicativos móveis com Flutter."
     },
     {
       "id": 33,
@@ -304,7 +304,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Ana Santos",
-      "description": "Aplique ciência de dados para análise de negócios eficaz. (Tecnologia)"
+      "description": "Aplique ciência de dados para análise de negócios eficaz."
     },
     {
       "id": 34,
@@ -313,7 +313,7 @@
       "rating": 4.5,
       "year": 2023,
       "professor": "André Costa",
-      "description": "Explore técnicas modernas de escultura e arte. (Arte)"
+      "description": "Explore técnicas modernas de escultura e arte."
     },
     {
       "id": 35,
@@ -322,7 +322,7 @@
       "rating": 4.9,
       "year": 2022,
       "professor": "Elena Rodriguez",
-      "description": "Domine a arte da confeitaria gourmet. (Culinária)"
+      "description": "Domine a arte da confeitaria gourmet."
     },
     {
       "id": 36,
@@ -331,7 +331,7 @@
       "rating": 4.8,
       "year": 2023,
       "professor": "Daniel Fernandes",
-      "description": "Desenvolva habilidades de gestão financeira estratégica. (Finanças)"
+      "description": "Desenvolva habilidades de gestão financeira estratégica."
     },
     {
       "id": 37,
@@ -340,7 +340,7 @@
       "rating": 4.7,
       "year": 2022,
       "professor": "Laura Almeida",
-      "description": "Aprofunde-se na psicologia cognitiva avançada. (Psicologia)"
+      "description": "Aprofunde-se na psicologia cognitiva avançada."
     },
     {
       "id": 38,
@@ -349,7 +349,7 @@
       "rating": 4.6,
       "year": 2023,
       "professor": "Carlos Oliveira",
-      "description": "Elabore estratégias eficazes de marketing digital. (Marketing)"
+      "description": "Elabore estratégias eficazes de marketing digital."
     },
     {
       "id": 39,
@@ -358,7 +358,7 @@
       "rating": 4.9,
       "year": 2022,
       "professor": "Isabella Lopez",
-      "description": "Capture a beleza da vida selvagem através da fotografia. (Fotografia)"
+      "description": "Capture a beleza da vida selvagem através da fotografia."
     },
     {
       "id": 40,
@@ -367,7 +367,7 @@
       "rating": 4.8,
       "year": 2023,
       "professor": "Lucas Rodrigues",
-      "description": "Mergulhe no mundo da escrita de ficção científica. (Escrita)"
+      "description": "Mergulhe no mundo da escrita de ficção científica."
     }
   ]
 }
