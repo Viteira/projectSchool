@@ -17,7 +17,8 @@ import { ToolbarMenuComponent } from './components/toolbar-menu/toolbar-menu.com
     FlexLayoutModule
   ],
   exports: [
-    TollbarTitleComponent
+    TollbarTitleComponent,
+    FlexLayoutModule
   ]
 })
 export class SharedModule { }
