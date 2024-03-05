@@ -1,12 +1,12 @@
-<div fxLayout="row wrap"  fxLayoutGap="16px grid">
-  <div fxFlex="20" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="33" fxFlex.lg="25" *ngFor="let course of courseList">
-    <mat-card class="mat-elavation-z4">
+
+  <div  class="justifyContent">
+    <mat-card *ngFor="let course of courseList" class="mat-elavation-z4">
       <img mat-card-image src="{{course.image}}">
       <div class="justify">
         <mat-card-subtitle>
           {{course.category}}
           <div fxFlex></div>
-          <button mat-mini-fab style="margin-top: -32px" class="mat-elevation-z2">
+          <button mat-mini-fab class="mat-elevation-z2 buttonJustify">
             <mat-icon class="mat-18">favorite</mat-icon>
           </button>
         </mat-card-subtitle>
@@ -27,5 +27,5 @@
       </mat-card-actions>
     </mat-card>
   </div>
-</div>
+
 

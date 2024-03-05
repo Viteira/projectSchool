@@ -1,20 +1,18 @@
 mat-card{
-  width: 416px;
-  height: 470px;
-  margin-bottom: 4px;
+  max-width: 300px;
+  max-width: 400px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
   cursor: pointer;
   transition-timing-function: ease-in;
   transition-duration: .35s;
   text-overflow: ellipsis;
   &-title{
     font-size: 15px;
-    text-overflow: ellipsis;
     color: #00ff73;
   }
-  &-actions{
-    text-overflow: ellipsis;
-    display: inline-block;
-  }
+
 }
 
 mat-card:hover{
@@ -34,4 +32,18 @@ mat-card:hover{
   mat-icon{
     margin-top: 3px;
   }
+}
+
+.justifyContent{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: center;
+}
+
+.buttonJustify{
+  margin-top: -30px;
+  margin-right: 10px;
 }
