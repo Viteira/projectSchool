@@ -1,6 +1,4 @@
-
-
-mat-sidenav-content{
+mat-sidenav-content {
   height: 100vh;
 }
 
@@ -11,11 +9,11 @@ mat-sidenav-content{
 //   z-index: 10;
 // }
 
-mat-toolbar-row{
+mat-toolbar-row {
   padding: 0%;
 }
 
-.toolbar-submenu{
+.toolbar-submenu {
   height: 205px;
   font-size: 2rem;
   margin-top: 0px;
@@ -25,92 +23,89 @@ mat-toolbar-row{
   align-items: start;
   background-color: #424242;
 
-  &-title{
+  &-title {
     padding: 25px 30px;
     text-transform: capitalize;
   }
-  &-top{
+
+  &-top {
     height: 40px;
     color: #22ff86d2;
   }
-
 }
 
-.justify-buttons{
+.justify-buttons {
   display: flex;
   align-items: baseline;
 }
 
-
 // --------- SideNav -----------//
 
-
-
-mat-nav-list{
+mat-nav-list {
   padding: 8px;
-  a{
+  a {
     border-radius: 100px;
     margin-bottom: 4px;
     font-size: 0.9rem;
-    span{
+    span {
       padding-top: 4px;
     }
   }
-  a:hover, .active{
+  a:hover,
+  .active {
     background-color: #1b1b1b;
   }
 }
 
-.mat-drawer-content{
+.mat-drawer-content {
   background-color: rgb(31, 31, 31);
 }
 
-.sidenav{
+.sidenav {
   width: 250px;
-  .mat-icon{
+  .mat-icon {
     margin: 10px 20px 0 0;
     font-size: 18px;
     color: #22ff86d2;
   }
-  .mat-toolbar{
-      display: flex;
-      flex-direction: column;
-      background-color: #424242;
-      text-align: center;
+  .mat-toolbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #424242;
+    text-align: center;
   }
-  a{
+  a {
     text-decoration: none;
     color: white;
   }
-  .avatar{
+  .avatar {
     margin-top: 90px;
     width: 150px;
     height: 225px;
-    border-radius: 20%;
+    border-radius: 50%;
   }
-  .name{
+  .name {
     margin-top: 8px;
   }
-  .designation{
+  .designation {
     font-size: 1.1rem;
     color: #22ff86d2;
   }
-  mat-divider{
+  mat-divider {
     margin-top: 336px;
   }
-  .justify{
+  .justify {
     margin-right: 10px;
     display: flex;
     align-items: flex-end;
-    button:hover{
+    button:hover {
       background-color: rgba(20, 249, 142, 0.326);
     }
-    p{
+    p {
       margin: 6px;
     }
   }
-  .iconPerson{
+  .iconPerson {
     margin: 4px 20px 0 0;
   }
 }
-
