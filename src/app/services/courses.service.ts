@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, take } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Course } from '../shared/models/course';
 
@@ -11,9 +11,21 @@ export class CoursesService {
   baseUrl = `${environment.apiUrl}courses`;
   private http = inject(HttpClient);
 
-  public getCourses(): Observable<Course[]> {
-    console.log(this.baseUrl);
-    return this.http.get<Course[]>(this.baseUrl);
+  public get(
+    currentPage: number,
+    pageSize: number,
+    category: string,
+    search: string
+  ): Observable<HttpResponse<any>> {
+    let url = `${this.baseUrl}?_page=${currentPage}&_limit=${pageSize}`;
+    if (category) {
+      url = `${url}&category=${category}`;
+    }
+    if (search) {
+      url = `${this.baseUrl}?q=${search}`;
+    }
+    return this.http.get<Course[]>(`${url}`, { observe: 'response' }).pipe(take(1));
+    //-----Take desinscreve do observable, se uma função é chamada em mais de um lugar------------//
   }
 
   public getCoursesById(id: number): Observable<Course[]> {
