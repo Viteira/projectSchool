@@ -1,7 +1,7 @@
 export interface Course{
   id: number,
   name: string,
-  category: Category,
+  category: string,
   rating: number,
   year: number,
   professor: string,
