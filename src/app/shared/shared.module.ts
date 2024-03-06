@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ToolbarMenuComponent } from './components/toolbar-menu/toolbar-menu.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,15 @@ import { ToolbarMenuComponent } from './components/toolbar-menu/toolbar-menu.com
     CommonModule,
     MatToolbarModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     TollbarTitleComponent,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
