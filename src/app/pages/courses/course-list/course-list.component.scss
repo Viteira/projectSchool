@@ -1,3 +1,36 @@
+.formContent {
+  display: flex;
+  margin: 10px 15px -5px 15px;
+  gap: 25px;
+}
+.justifySearchBar {
+  width: 33%;
+}
+.justifySelector {
+  width: 33%;
+}
+.paginator {
+  width: 33%;
+  height: 55px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: solid 1px #dddddd86;
+  background-color: #4a4a4a;
+}
+.justifyFilter {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.loadingTemplate {
+  width: 98.2%;
+  margin-left: 15px;
+}
+
+//---------CARDS--------------
 mat-card{
   max-width: 300px;
   max-width: 400px;
@@ -12,7 +45,10 @@ mat-card{
     font-size: 15px;
     color: #00ff73;
   }
-
+  &-actions {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 mat-card:hover{
@@ -20,7 +56,6 @@ mat-card:hover{
   transform: scale(1.01);
   transition-timing-function: ease;
   transition-duration: .35s;
-
 }
 
 .justify{
