@@ -3,7 +3,15 @@ import { HttpResponse } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { PageEvent } from '@angular/material/paginator';
-import { EMPTY, Observable, Subscription, catchError, debounceTime, take, tap } from 'rxjs';
+import {
+  EMPTY,
+  Observable,
+  Subscription,
+  catchError,
+  debounceTime,
+  take,
+  tap,
+} from 'rxjs';
 import { CoursesService } from 'src/app/services/courses.service';
 import { Category, Course } from 'src/app/shared/models/course';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -128,7 +136,7 @@ export class CourseListComponent implements OnInit, OnDestroy {
           }
         }),
         catchError((err: string) => {
-          this.snackbar.open(err, 'Close', {duration: 5000});
+          this.snackbar.open(err, 'Close', { duration: 5000 });
           return EMPTY;
         })
       );
