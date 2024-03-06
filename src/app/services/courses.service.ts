@@ -1,6 +1,10 @@
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import {
+  HttpClient,
+  HttpErrorResponse,
+  HttpResponse,
+} from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Observable, take } from 'rxjs';
+import { Observable, catchError, take, throwError } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Course } from '../shared/models/course';
 
@@ -24,7 +28,9 @@ export class CoursesService {
     if (search) {
       url = `${this.baseUrl}?q=${search}`;
     }
-    return this.http.get<Course[]>(`${url}`, { observe: 'response' }).pipe(take(1));
+    return this.http
+      .get<Course[]>(`${url}`, { observe: 'response' })
+      .pipe( catchError(this.handleError));
     //-----Take desinscreve do observable, se uma função é chamada em mais de um lugar------------//
   }
 
@@ -42,5 +48,16 @@ export class CoursesService {
 
   public deleteCourses(id: number): Observable<Course[]> {
     return this.http.delete<Course[]>(`${this.baseUrl}/${id}`);
+  }
+
+  private handleError(err: HttpErrorResponse): Observable<never> {
+    let errorMensagge: string;
+    if (err.error instanceof ErrorEvent) {
+      errorMensagge = `An  error occured: ${err.error.message}`;
+    } else {
+      errorMensagge = `Backend returned code: ${err.status}: ${err.message}`;
+    }
+    console.error(err);
+    return throwError(() => errorMensagge);
   }
 }
