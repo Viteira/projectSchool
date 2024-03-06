@@ -14,7 +14,7 @@ export const SHADOW_LIMIT = 100;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
@@ -22,43 +22,61 @@ export class AppComponent implements OnInit {
   public popText = false;
   public applyShadow = false;
   public itemsMenu: MenuItem[] = menuItems;
-  public menuName= '';
+  public menuName = '';
   private breakpointObserver = inject(BreakpointObserver);
   private route = inject(Router);
-  private activatedRout = inject(ActivatedRoute)
-
+  private activatedRout = inject(ActivatedRoute);
 
   ngOnInit(): void {
     const content = document.getElementsByClassName(SCROLL_CONTAINER)[0];
 
     fromEvent(content, 'scroll')
-    .pipe(map(() => content.scrollTop))
-    .subscribe((value: number) => this.determineHeader(value));
+      .pipe(map(() => content.scrollTop))
+      .subscribe((value: number) => this.determineHeader(value));
 
-    this.route.events.pipe(
-      filter((event => event instanceof NavigationEnd)),
-      map(event => event as NavigationEnd)
-    ).subscribe(()=>{
-      this.menuName = this.activatedRout.firstChild?.snapshot.routeConfig?.path ?? ''
-    });
+    this.route.events
+      .pipe(
+        filter((event) => event instanceof NavigationEnd),
+        map((event) => event as NavigationEnd)
+      )
+      .subscribe(() => {
+        this.menuName =
+          this.activatedRout.firstChild?.snapshot.routeConfig?.path ?? '';
+        switch (this.menuName) {
+          case 'courses':
+            this.menuName = 'cursos';
+            break;
+          case 'support':
+            this.menuName = 'suporte';
+            break;
+          case 'teachers':
+            this.menuName = 'professores';
+            break;
+          case 'students':
+            this.menuName = 'estudantes';
+            break;
+          case 'users':
+            this.menuName = 'usuário';
+            break;
+        }
+      });
   }
 
-  determineHeader(scrollTop: number){
+  determineHeader(scrollTop: number) {
     this.popText = scrollTop >= TEXT_LIMIT;
     this.applyShadow = scrollTop >= SHADOW_LIMIT;
   }
 
-  ngAfterContentInit(): void{
+  ngAfterContentInit(): void {
     this.breakpointObserver.observe(['(max-width: 800px)']).subscribe({
       next: (res) => {
-        if(res.matches){
-          this.sidenav.mode= 'over';
+        if (res.matches) {
+          this.sidenav.mode = 'over';
           this.sidenav.close();
-        } else{
-          this.sidenav.mode= 'side';
+        } else {
+          this.sidenav.mode = 'side';
         }
-      }
+      },
     });
   }
 }
-;
