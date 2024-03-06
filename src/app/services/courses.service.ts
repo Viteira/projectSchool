@@ -1,35 +1,63 @@
-import { HttpClient } from "@angular/common/http";
-import { Injectable, inject } from "@angular/core"
-import { Observable } from "rxjs";
-import { environment } from "src/environments/environment"
-import { Course } from "../shared/models/course";
+import {
+  HttpClient,
+  HttpErrorResponse,
+  HttpResponse,
+} from '@angular/common/http';
+import { Injectable, inject } from '@angular/core';
+import { Observable, catchError, take, throwError } from 'rxjs';
+import { environment } from 'src/environments/environment';
+import { Course } from '../shared/models/course';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
-export class CoursesService{
+export class CoursesService {
   baseUrl = `${environment.apiUrl}courses`;
   private http = inject(HttpClient);
 
-  public getCourses(): Observable<Course[]>{
-    console.log(this.baseUrl);
-    return this.http.get<Course[]>(this.baseUrl)
+  public get(
+    currentPage: number,
+    pageSize: number,
+    category: string,
+    search: string
+  ): Observable<HttpResponse<any>> {
+    let url = `${this.baseUrl}?_page=${currentPage}&_limit=${pageSize}`;
+    if (category) {
+      url = `${url}&category=${category}`;
+    }
+    if (search) {
+      url = `${this.baseUrl}?q=${search}`;
+    }
+    return this.http
+      .get<Course[]>(`${url}`, { observe: 'response' })
+      .pipe( catchError(this.handleError));
+    //-----Take desinscreve do observable, se uma função é chamada em mais de um lugar------------//
   }
 
-  public getCoursesById(id: number): Observable<Course[]>{
-    return this.http.get<Course[]>(`${this.baseUrl}/${id}`)
+  public getCoursesById(id: number): Observable<Course[]> {
+    return this.http.get<Course[]>(`${this.baseUrl}/${id}`);
   }
 
-  public postCourses(course: Course): Observable<Course[]>{
-    return this.http.post<Course[]>(`${this.baseUrl}`, course)
+  public postCourses(course: Course): Observable<Course[]> {
+    return this.http.post<Course[]>(`${this.baseUrl}`, course);
   }
 
-  public putCourses(id: number, course: Course): Observable<Course[]>{
-    return this.http.put<Course[]>(`${this.baseUrl}/${id}`, course)
+  public putCourses(id: number, course: Course): Observable<Course[]> {
+    return this.http.put<Course[]>(`${this.baseUrl}/${id}`, course);
   }
 
-  public deleteCourses(id: number): Observable<Course[]>{
-    return this.http.delete<Course[]>(`${this.baseUrl}/${id}`)
+  public deleteCourses(id: number): Observable<Course[]> {
+    return this.http.delete<Course[]>(`${this.baseUrl}/${id}`);
+  }
+
+  private handleError(err: HttpErrorResponse): Observable<never> {
+    let errorMensagge: string;
+    if (err.error instanceof ErrorEvent) {
+      errorMensagge = `An  error occured: ${err.error.message}`;
+    } else {
+      errorMensagge = `Backend returned code: ${err.status}: ${err.message}`;
+    }
+    console.error(err);
+    return throwError(() => errorMensagge);
   }
 }
