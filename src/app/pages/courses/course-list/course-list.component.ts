@@ -82,46 +82,59 @@ export class CourseListComponent implements OnInit, OnDestroy {
             switch (course.category) {
               case 'Tecnologia':
                 course.image = '../../../../assets/images/tecnologia.jpg';
+                course.logo = '../../../../assets/images/tecnologia.png';
                 break;
               case 'Arte':
                 course.image = '../../../../assets/images//arte.jpg';
+                course.logo = '../../../../assets/images/arte.png';
                 break;
               case 'Culinária':
                 course.image = '../../../../assets/images/culinaria.jpg';
+                course.logo = '../../../../assets/images/culinaria.png';
                 break;
               case 'Finanças':
                 course.image = '../../../../assets/images/financas.jpg';
+                course.logo = '../../../../assets/images/financas.png';
                 break;
               case 'Psicologia':
-                course.image = '../../../../assets/images/pisicologia.jpg';
+                course.image = '../../../../assets/images/psicologia.jpg';
+                course.logo = '../../../../assets/images/psicologia.png';
                 break;
               case 'Marketing':
                 course.image = '../../../../assets/images/marketing.jpg';
+                course.logo = '../../../../assets/images/marketing.png';
                 break;
               case 'Fotografia':
-                course.image = '../../../../assets/images/filosofia.jpg';
+                course.image = '../../../../assets/images/fotografia.jpg';
+                course.logo = '../../../../assets/images/fotografia.png';
                 break;
               case 'Escrita':
                 course.image = '../../../../assets/images/escrita.jpg';
+                course.logo = '../../../../assets/images/escrita.png';
                 break;
               case 'Música':
                 course.image = '../../../../assets/images/musica.jpg';
+                course.logo = '../../../../assets/images/musica.png';
                 break;
               case 'Ciências Ambientais':
-                course.image =
-                  '../../../../assets/images/ciencias-ambientais.jpg';
+                course.image = '../../../../assets/images/ciencias-ambientais.jpg';
+                  course.logo = '../../../../assets/images/ciencias-ambientais.png';
                 break;
               case 'Moda':
                 course.image = '../../../../assets/images/moda.jpg';
+                course.logo = '../../../../assets/images/moda.png';
                 break;
               case 'Comunicação':
                 course.image = '../../../../assets/images/comunicacao.jpg';
+                course.logo = '../../../../assets/images/comunicacao.png';
                 break;
               case 'Filosofia':
                 course.image = '../../../../assets/images/filosofia.jpg';
+                course.logo = '../../../../assets/images/filosofia.png';
                 break;
               case 'Saúde':
                 course.image = '../../../../assets/images/saude.jpg';
+                course.logo = '../../../../assets/images/saude.png';
                 break;
               default:
             }
