@@ -22,27 +22,30 @@
   </div>
 </form>
 <div class="justifyContent" *ngIf="courseData | async; else loading">
-  <mat-card *ngFor="let course of courseList" class="mat-elavation-z4">
-    <img mat-card-image src="{{course.image}}">
-    <div class="justify">
-      <mat-card-subtitle>
-        {{course.category}}
-        <div fxFlex></div>
-        <button mat-mini-fab class="mat-elevation-z2 buttonJustify">
-          <mat-icon class="mat-18">favorite</mat-icon>
+  <mat-card *ngFor="let course of courseList">
+    <div class="wrapper">
+      <img mat-card-image src="{{course.image}}" class="coverImage">
+      <div class="justify">
+        <mat-card-subtitle>
+          {{course.category}}
+          <div fxFlex></div>
+          <button mat-mini-fab class="mat-elevation-z2 buttonJustify">
+            <mat-icon class="mat-18">favorite</mat-icon>
+          </button>
+        </mat-card-subtitle>
+          <mat-card-title>{{course.name}}</mat-card-title>
+          <br>
+          {{course.description}}
+      </div>
+      <mat-divider></mat-divider>
+      <mat-card-actions>
+        <button mat-button>INSCREVER</button>
+        <button mat-icon-button>
+          <mat-icon>share</mat-icon>
         </button>
-      </mat-card-subtitle>
-      <mat-card-title>{{course.name}}</mat-card-title>
-      <br>
-      {{course.description}}
+      </mat-card-actions>
     </div>
-    <mat-divider></mat-divider>
-    <mat-card-actions>
-      <button mat-button>INSCREVER</button>
-      <button mat-icon-button>
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-card-actions>
+    <img src="{{course.logo}}" class="character">
   </mat-card>
   <div *ngIf="!courseList.length" class="justifyFilter">
     <br>
@@ -50,7 +53,6 @@
     <p *ngIf="f.category.value">Categoria: {{f.category.value}}</p>
   </div>
 </div>
-<ng-template #loading >
+<ng-template #loading>
   <mat-progress-bar mode="indeterminate" color="accent" class="loadingTemplate"></mat-progress-bar>
 </ng-template>
-

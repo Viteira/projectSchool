@@ -6,7 +6,8 @@ export interface Course{
   year: number,
   professor: string,
   description: string,
-  image: string
+  image: string,
+  logo: string
 }
 
 export enum Category{
