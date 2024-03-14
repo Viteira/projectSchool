@@ -28,7 +28,6 @@
       <div class="justify">
         <mat-card-subtitle>
           {{course.category}}
-          <div fxFlex></div>
           <button mat-mini-fab class="mat-elevation-z2 buttonJustify">
             <mat-icon class="mat-18">favorite</mat-icon>
           </button>
@@ -45,7 +44,13 @@
         </button>
       </mat-card-actions>
     </div>
-    <img src="{{course.logo}}" class="character">
+    <div class="character">
+      <img src="{{course.logo}}">
+        <button mat-fab extended>
+          Baixar Curso
+          <mat-icon>download</mat-icon>
+        </button>
+    </div>
   </mat-card>
   <div *ngIf="!courseList.length" class="justifyFilter">
     <br>
